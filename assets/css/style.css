@@ -880,6 +880,7 @@ body {
 .beach-image {
   width: calc(100% - 33.33%);
   position: relative;
+  margin: 0 auto;
 }
 
 .beach-picture {
@@ -926,9 +927,17 @@ body {
   margin: 0 15px;
 }
 
+.beach-image img {
+  position: absolute;
+  left: 0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
 .active-image {
   opacity: 1;
-  animation: Fadein 1s ease-in;
 }
 
 .beach-dates {
@@ -1540,7 +1549,7 @@ body {
 
 @keyframes Fadein {
   from {
-    opacity: 0.5;
+    opacity: 0;
   } to {
     opacity: 1;
   }
