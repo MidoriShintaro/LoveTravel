@@ -1546,11 +1546,3 @@ body {
   font-weight: normal;
   letter-spacing: 2px;
 }
-
-@keyframes Fadein {
-  from {
-    opacity: 0;
-  } to {
-    opacity: 1;
-  }
-}
