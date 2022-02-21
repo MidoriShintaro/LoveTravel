@@ -37,3 +37,21 @@ bars.forEach((bar, index) => {
     image.classList.add("active-image");
   };
 });
+
+//open - close slider bar
+var isClose = document.querySelector(".general-close-icon");
+var sliderbar = document.querySelector(".general-content");
+var isOpen = document.querySelector(".img-menu");
+isOpen.onclick = function (e) {
+  if (e.target.closest(".img-menu")) {
+    sliderbar.classList.remove("showslider");
+    sliderbar.style.animation = "Open ease .6s";
+  }
+};
+
+isClose.onclick = function (e) {
+  if (e.target.closest(".general-close-icon")) {
+    sliderbar.style.animation = "Close ease .6s";
+    sliderbar.classList.add("showslider");
+  }
+};
